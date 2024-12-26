@@ -6,7 +6,6 @@ import pickle
 from sklearn.preprocessing import LabelEncoder
 import matplotlib.pyplot as plt
 import seaborn as sns
-import numpy as np
 import plotly.graph_objs as go
 import plotly.express as px
 
@@ -14,7 +13,6 @@ import plotly.express as px
 print(f"Python Version: {sys.version}")
 print(f"Scikit-learn Version: {sklearn.__version__}")
 print(f"Pandas Version: {pd.__version__}")
-print("Numpy version:", np.__version__)
 print("Streamlit version:", st.__version__)
 print("Seaborn version:", sns.__version__)
 
@@ -356,7 +354,7 @@ def show_dashboard_page():
                     sum_var = internet_type[internet_type['InternetService'] == i_type]['Count'].sum()
                     
                     # Calculate percentage
-                    percent = np.round((count_var / sum_var) * 100, 1)
+                    percent = round((count_var / sum_var) * 100, 1)
                     percent_list.append(percent)
                 
                 # Store the percentage values for each satisfaction score
@@ -432,7 +430,7 @@ def show_dashboard_page():
                                         # Calculate the sum for the phone service to calculate percentage
                     sum_var = ps[ps['PhoneService2'] == i_type]['Count'].sum()
                                         # Calculate percentage
-                    percent = np.round((count_var / sum_var) * 100, 1)
+                    percent = round((count_var / sum_var) * 100, 1)
                     percent_list.append(percent)
                                     # Store the percentage values for each satisfaction score
                 percent_dict[num] = percent_list
