@@ -14,6 +14,9 @@ import plotly.express as px
 print(f"Python Version: {sys.version}")
 print(f"Scikit-learn Version: {sklearn.__version__}")
 print(f"Pandas Version: {pd.__version__}")
+print("Numpy version:", np.__version__)
+print("Streamlit version:", st.__version__)
+print("Seaborn version:", sns.__version__)
 
 # Load model and preprocessor (if any)
 model = pickle.load(open('Churn Prediction.pkl', 'rb'))
