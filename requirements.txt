@@ -1,0 +1,7 @@
+numpy
+streamlit
+matplotlib
+plotly
+Python Version: 3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]
+Scikit-learn Version: 1.6.0
+Pandas Version: 2.2.3

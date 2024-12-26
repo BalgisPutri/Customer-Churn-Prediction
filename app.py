@@ -1,18 +1,19 @@
+import sys
+import sklearn
 import streamlit as st
 import pandas as pd
 import pickle
 from sklearn.preprocessing import LabelEncoder
-import streamlit as st
-import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import streamlit as st
-import seaborn as sns
-import matplotlib.pyplot as plt
-import pandas as pd
 import numpy as np
 import plotly.graph_objs as go
 import plotly.express as px
+
+
+print(f"Python Version: {sys.version}")
+print(f"Scikit-learn Version: {sklearn.__version__}")
+print(f"Pandas Version: {pd.__version__}")
 
 # Load model and preprocessor (if any)
 model = pickle.load(open('Churn Prediction.pkl', 'rb'))
