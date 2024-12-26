@@ -1,4 +1,4 @@
-numpy==2.1.1
+numpy
 streamlit==1.41.1
 matplotlib==3.6.0
 plotly==5.0.0
